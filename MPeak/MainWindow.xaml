@@ -5,9 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MPeak"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Conversor de Video" Height="300" Width="400">
     <Grid>
-        <Label Content="HOLANDA CHAVALES COMO LES BAILA" HorizontalAlignment="Left" Margin="236,95,0,0" VerticalAlignment="Top" Width="272"/>
+        <Button Name="btnSeleccionarArchivo" Content="Seleccionar MP4" Click="btnSeleccionarArchivo_Click" 
+                HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10"/>
 
+        <Button Name="btnConvertir" Content="Convertir a MP3" Click="btnConvertir_Click" 
+                HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10"/>
+
+        <TextBlock Name="lblEstado" Text="Esperando archivo..." HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="10"/>
     </Grid>
 </Window>
